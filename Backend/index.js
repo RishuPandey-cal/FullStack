@@ -11,10 +11,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
-// mongoose
-//   .connect("mongodb://mongo:27017/db")
-//   .then(() => console.log("MongoDB connected"))
-//   .catch((err) => console.log("MongoDB connection error:", err));
+mongoose
+  .connect("mongodb://mongo:27017/db")
+  .then(() => console.log("MongoDB connected"))
+  .catch((err) => console.log("MongoDB connection error:", err));
 
 app.get("/", (req, res) => {
   res.send("Hello world");
