@@ -1,0 +1,14 @@
+# Dockerfile.Frontend
+
+FROM node
+
+WORKDIR /app
+
+COPY Frontend/ .
+RUN npm install
+
+
+
+EXPOSE 5173
+
+CMD ["npm", "run", "dev"]

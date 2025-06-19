@@ -1,0 +1,14 @@
+# Dockerfile.Backend
+
+FROM node
+
+WORKDIR /app
+
+# COPY FROM actual relative path to inside the container
+COPY Backend/ .
+RUN npm install
+
+
+EXPOSE 4000
+
+CMD ["node", "index.js"]
