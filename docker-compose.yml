@@ -9,6 +9,7 @@ services:
       - mongo-data:/data/db
 
   backend:
+    image: rishu89/fullstack:backend_01
     build:
       context: .
       dockerfile: Dockerfile.Backend
@@ -19,6 +20,7 @@ services:
       - mongo
 
   frontend:
+    image: rishu89/fullstack:frontend_01
     build:
       context: .
       dockerfile: Dockerfile.Frontend
