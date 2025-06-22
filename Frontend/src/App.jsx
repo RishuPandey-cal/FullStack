@@ -11,7 +11,7 @@ function App() {
 
   async function getData() {
     try {
-      const res = await axios.get("http://localhost:4000/get-names");
+      const res = await axios.get("http://backend-service:4000/get-names");
       setMessage(res.data);
     } catch (err) {
       console.error("Error fetching data:", err);
@@ -22,7 +22,7 @@ function App() {
     if (text === "") return;
 
     try {
-      await axios.post("http://localhost:4000/add-names", { name: text });
+      await axios.post("http://backend-service:4000/add-names", { name: text });
       setText("");
       getData();
     } catch (err) {
