@@ -17,10 +17,10 @@ spec:
         app: node-app
     spec:
       containers:
-      - name: node-app-backend_01
+      - name: node-app-backend-01
         # Run this image
         image: rishu89/fullstack:backend_01
-      - name: node-app-frontend_01
+      - name: node-app-frontend-01
         image:  rishu89/fullstack:frontend_01 
       - name: node-app-db
         image:  mongo:4.4.18
