@@ -36,7 +36,7 @@ function App() {
       <input
         value={text}
         onChange={(e) => setText(e.target.value)}
-        placeholder="Type message..."
+        placeholder="Type message..."  
       />
       <button onClick={handleSubmit}>Send</button>
 

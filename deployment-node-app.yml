@@ -13,13 +13,13 @@ spec:
         app: node-app
     spec:
       containers:
-        - name: node-app-backend-01
-          image: rishu89/fullstack:backend_01
+        - name: node-app-backend-02
+          image: rishu89/fullstack:backend_02
           ports:
             - containerPort: 4000
 
-        - name: node-app-frontend-01
-          image: rishu89/fullstack:frontend_01
+        - name: node-app-frontend-02
+          image: rishu89/fullstack:frontend_02
           ports:
             - containerPort: 5173  # frontend should be on 5173 
 
